@@ -6,7 +6,7 @@ import numpy as np
 
 def train():
     X, y = load_iris(return_X_y=True)
-    model = LogisticRegression(max_iter=200)
+    model = LogisticRegression(max_iter=300)
     model.fit(X, y)
     joblib.dump(model, "model.pkl")
 
